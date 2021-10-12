@@ -5,7 +5,7 @@ let counter = 0;
 let color = 0;
 
 function App() {
-    const [data] = React.useState(["red","green","blue"]);
+    const [data, setData] = React.useState(["red","green","blue"]);
     const [list, setList] = React.useState([]);
     const [change, setChange] = React.useState(false);
 
@@ -19,6 +19,8 @@ function App() {
         setList([]);
         counter = 0;
         color = 0;
+        let newList = ["#" + Math.floor(Math.random()*16777215).toString(16),"#" + Math.floor(Math.random()*16777215).toString(16),"#" + Math.floor(Math.random()*16777215).toString(16)];
+        setData(newList);
     }
 
     const addList =()=>{

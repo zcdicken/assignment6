@@ -3,10 +3,12 @@ import React from "react";
 function Block(props) {
 
     let style = {
-        height: "100px",
-        width: "100px",
+        display:"inline-block",
+        float:"left",
+        height: "50px",
+        width: "50px",
         borderStyle: "solid",
-        borderWeight: "2px",
+        borderWeight: "1px",
         backgroundColor: props.data.backColor
     }
     return(
